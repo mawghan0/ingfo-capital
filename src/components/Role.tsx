@@ -2,12 +2,12 @@ export const Role = () => {
   return (
     <>
       <img
-        className="border-t border-highlight pt-3"
+        className="border-t border-highlight pt-3 lg:pt-10 lg:h-72 sm:w-full sm:object-cover"
         src="/INGFO_CAPITAL_2.png"
         alt=""
       />
-      <div className="font-body text-lightText px-4 py-5 text-justify">
-        <h1 className="font-bold text-xl pb-4 text-darkText">
+      <div className="font-body text-lightText px-4 py-5 text-justify lg:px-32 lg:text-xl">
+        <h1 className="font-bold lg:text-2xl text-xl pb-4 text-darkText">
           Roles Ingfo Capital
         </h1>
         <section className="text-darkText">

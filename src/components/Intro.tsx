@@ -1,9 +1,9 @@
 export const Intro = () => {
   return (
     <>
-      <img src="/INGFO_CAPITAL_1.png" alt="" />
-      <div className="font-body text-lightText px-4 py-5 text-justify">
-        <h1 className="font-bold text-xl pb-4 text-darkText">About Ingfo Capital</h1>
+      <img className=" lg:h-72 sm:w-full sm:object-cover" src="/INGFO_CAPITAL_1.png" alt="" />
+      <div className="font-body text-lightText px-4 py-5 text-justify lg:px-32 lg:text-xl">
+        <h1 className="font-bold lg:text-2xl text-xl pb-4 text-darkText">About Ingfo Capital</h1>
         <p>
           The growth of the community and the high enthusiasm for learning
           encouraged us to expand our reach through the establishment of this

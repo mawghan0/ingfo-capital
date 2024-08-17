@@ -5,9 +5,9 @@ export const Nav = () => {
   const [active, setActive] = useState("home");
   return (
     <>
-      <nav className="relative bg-black h-11 w-screen flex gap-3 text-lightText px-4 items-center font-sans">
+      <nav className="lg:h-20 lg:text-2xl md:h-16 md:text-xl sm:h-14 text-sm sm:text-lg relative bg-black h-11 flex gap-3 text-lightText px-4 items-center font-sans">
         <div className="h-full overflow-hidden">
-          <img className="w-11" src="/logo.jpg" alt="" />
+          <img className="w-11 sm:w-14 md:w-16 lg:h-20" src="/logo.jpg" alt="" />
         </div>
 
         <Link to="/">
@@ -15,7 +15,7 @@ export const Nav = () => {
             onClick={() => {
               setActive("home");
             }}
-            className={active === "home" ? "text-darkText underline" : ""}
+            className={active === "home" ? "text-darkText underline hover:text-white" : "hover:text-white"}
           >
             Home
           </h1>
@@ -25,16 +25,16 @@ export const Nav = () => {
             onClick={() => {
               setActive("about");
             }}
-            className={active === "about" ? "text-darkText underline" : ""}
+            className={active === "about" ? "text-darkText underline hover:text-white" : "hover:text-white"}
           >
             About
           </h1>
         </Link>
         <a
-          className="absolute top-3 right-4 flex gap-1 cursor-pointer text-accent"
+          className="sm:top-[21px] sm:right-5 md:top-6 lg:top-8 lg:right-6 absolute top-3.5 right-4 flex gap-1 cursor-pointer text-accent"
           href="https://t.co/Fxb3QoNHuh"
         >
-          <p className="text-xs">Join Discord</p>
+          <p className="text-xs lg:text-base hover:text-blue-200">Join Discord</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
