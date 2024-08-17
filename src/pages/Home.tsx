@@ -1,10 +1,10 @@
 export const Home = () => {
   return (
     <>
-      <div className="h-full flex flex-col">
+      <div className="min-h-[700px] flex flex-col relative">
         <img
           className="sm:h-[300px] lg:h-96 sm:w-full sm:object-cover"
-          src="public\ingfo_capital.gif"
+          src="/ingfo_capital.gif"
           alt="My gif"
         />
         <p className="sm:text-lg md:text-xl text-darkText p-4 text-center font-body mb-1 xl:px-32">

@@ -6,12 +6,13 @@ import { About } from "./pages/About";
 function App() {
   return (
     <Router>
-      <Nav />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <div className="lg:min-h-[790px]">
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
