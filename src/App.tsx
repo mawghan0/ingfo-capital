@@ -1,19 +1,18 @@
 import { Nav } from "./components/Nav";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { About } from "./pages/About";
+import { Home } from "./components/Home";
+import { Intro } from "./components/Intro";
+import { Role } from "./components/Role";
 
 function App() {
   return (
-    <Router>
-      <div className="lg:min-h-[790px]">
+    <>
+      <div className="bg-primary">
         <Nav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <Home />
+        <Intro />
+        <Role />
       </div>
-    </Router>
+    </>
   );
 }
 
